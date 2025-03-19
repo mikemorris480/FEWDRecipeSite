@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container > div {
+    width: 100%;
+}
+
+#centered {
+    text-align: center;
+}
+
+#justified {
+    text-align: justify;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+
+.columns > ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0px; 
+}
+
+
