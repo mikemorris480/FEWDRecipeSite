@@ -1,11 +1,10 @@
-.container {
+.flex-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.container > div {
+.flex-container > div {
     width: 100%;
 }
 
@@ -19,18 +18,18 @@
 
 .columns {
     display: flex;
-    flex-direction: row;;
     justify-content: space-evenly;
-    background-color: aliceblue;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 2px 0px;
 }
 
 .columns > ul {
     list-style-type: none;
     margin: 10px;
     padding: 10px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0px; 
 }
+
 
 
