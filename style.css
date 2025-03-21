@@ -6,48 +6,12 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Rows stack vertically */
     gap: 20px;
-}
-
-.content {
-    display: flex;
-    gap: 20px;
-}
-
-.column {
-    flex: 1;
-}
-
-.columns {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: lightgray;
-}
-
-.columns > ul {
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-}
-
-ol {
-    list-style-type: none;
 }
 
 #centered {
     text-align: center;
-}
-
-#justified {
-    text-align: justify;
-}
-
-#step-number {
-    font-size: 2em;
-    float: left;
-    margin-right: 10px;
 }
 
 #alton-image {
@@ -58,6 +22,19 @@ ol {
     border-radius: 50%;
 }
 
+#justified {
+    text-align: justify;
+}
+
+#french-text {
+    color: blue;
+}
+
+#minor-instructions {
+    color:lightgreen;
+    font-size: 20px
+}
+
 #rascasse-image{
     width: 100px;
     height: 60px;
@@ -65,11 +42,52 @@ ol {
     margin-left: 10px;
 }
 
+.basic-instruction-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
+.basic-instruction-row > ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+
 #rouille-iamge {
     width: 200px;
     height: 100px;
     float: right;
     margin-left: 10px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.rows {
+    display: flex;
+    gap: 20px;
+}
+
+/* 
+   The .column class ensures that all columns grow, shrink, 
+   and share available space equally within a flex container. 
+   - flex-grow: 1 allows columns to grow equally.
+   - flex-shrink: 1 allows columns to shrink equally.
+   - flex-basis: 0 ensures columns start with no intrinsic size.
+*/
+.flex-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+#step-number {
+    font-size: 2em;
+    float: left;
+    margin-right: 10px;
 }
 
 #line {
