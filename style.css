@@ -55,11 +55,31 @@ body {
     padding: 10px;
 }
 
+.ingredients-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #rouille-iamge {
     width: 200px;
     height: 100px;
     float: right;
     margin-left: 10px;
+}
+
+#toggleButton {
+    align-self: center;
+    border: 1px solid lightcyan;
+    height: 30px;
+    border-radius: 10px;
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 5px 5px;
+    cursor: pointer;
 }
 
 ol {
